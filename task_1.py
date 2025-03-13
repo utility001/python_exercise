@@ -14,14 +14,10 @@ def first_name() -> str:
          A random first name
     """
     random_first_names = [
-        "Micheal", "Elizabeth", 
-        "Babatunde", "Yewande"
-        "Kamal", "Yusroh",
-        "Chukwudi", "Adaeze",
-        "Daniel", "Esther", 
-        "Umar", "Uwa",
-        "Charles", "Sandra"
-        "Alao", "Amope"
+        "Micheal", "Elizabeth", "Babatunde", "Yewande"
+        "Kamal", "Yusroh", "Chukwudi", "Adaeze",
+        "Daniel", "Esther", "Umar", "Uwa",
+        "Charles", "Sandra", "Alao", "Amope"
         ]
     return random.choice(random_first_names)
 
@@ -42,13 +38,13 @@ def last_name() -> str:
     random_last_names = [
         "Bello", "Danladi", "Balogun",
         "Azikiwe", "Coker", "Adeoye", 
-        "Arinze", "Adesina", "Coker"
+        "Arinze", "Adesina", ""
         ]
     return random.choice(random_last_names)
 
 def concat_name(fname: str, lname: str) -> None:
     """
-    outputs a string containing first and last names
+    outputs a string
 
     Parameters
     ----------
@@ -63,6 +59,7 @@ def concat_name(fname: str, lname: str) -> None:
 
     """
     print(f"My name is {fname} {lname}")
+
 
 if __name__ == "__main__":
     concat_name(
