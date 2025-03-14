@@ -2,7 +2,7 @@ import random
 
 def first_name() -> str:
     """
-    returns random first names
+    returns a random first name
 
     Parameters
     ----------
@@ -24,7 +24,7 @@ def first_name() -> str:
 
 def last_name() -> str:
     """
-    returns random last names
+    returns a random last name
 
     Parameters
     ----------
