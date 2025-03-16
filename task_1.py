@@ -1,50 +1,41 @@
 import random
 
-def first_name() -> str:
+def first_name(fname: str) -> str:
     """
-    returns a random first name
+    Accepts a first name as input and return it
 
     Parameters
     ----------
-    None
+    fname: str
+        First ame
 
     Returns
     -------
     str:
-         A random first name
+         first name
     """
-    random_first_names = [
-        "Micheal", "Elizabeth", "Babatunde", "Yewande"
-        "Kamal", "Yusroh", "Chukwudi", "Adaeze",
-        "Daniel", "Esther", "Umar", "Uwa",
-        "Charles", "Sandra", "Alao", "Amope"
-        ]
-    return random.choice(random_first_names)
+    return fname
 
 
-def last_name() -> str:
+def last_name(lname: str) -> str:
     """
-    returns a random last name
+    Accepts a first name as input and return it
 
     Parameters
     ----------
-    None
+    lname: str
+        last name        
 
     Returns
     -------
     str:
-         A random last name
+        last name
     """
-    random_last_names = [
-        "Bello", "Danladi", "Balogun",
-        "Azikiwe", "Coker", "Adeoye", 
-        "Arinze", "Adesina", ""
-        ]
-    return random.choice(random_last_names)
+    return last_name
 
-def concat_name(fname: str, lname: str) -> None:
+def welcome_message(fname: str, lname: str) -> None:
     """
-    outputs a string
+    Prints a welcome message to the screen
 
     Parameters
     ----------
@@ -58,11 +49,4 @@ def concat_name(fname: str, lname: str) -> None:
     None
 
     """
-    print(f"My name is {fname} {lname}")
-
-
-if __name__ == "__main__":
-    concat_name(
-        fname=first_name(), 
-        lname=last_name()
-        )
+    print(f"Welcome, {fname} {lname}")
