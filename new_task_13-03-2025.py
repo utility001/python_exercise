@@ -3,13 +3,12 @@ from typing import List, Any
 
 def bad_names_checker(customer_names_list: List[Any]):
     """
-    Yields bad entries
-    
-    Bad entries are entries that are not strings
+    This functions filters out bad entries from an input list and yields them
+    Bad entries are entries that are not string
 
     Parameters
     ----------
-    List[Any]:
+    customer_names_list: List[Any]
         A list containing names
     
     Yields
@@ -21,11 +20,9 @@ def bad_names_checker(customer_names_list: List[Any]):
         if not type(name) == str:
             yield name
 
-if __name__ == "__main__":
-    # Lets assume that these are the names we got from the marketing team
-    input_names = ["Adio", "Chukwudi", 56, 9, "Umar", 45.68]
-    bad_entries = bad_names_checker(customer_names_list = input_names)
 
-    # Check for the bad entries and print them
-    for entry in bad_entries:
-        print(entry)
+input_names = ["Adio", "Chukwudi", 56, 9, "Umar", 45.68]
+bad_entries = bad_names_checker(customer_names_list = input_names)
+
+for entry in bad_entries:
+    print(entry)
