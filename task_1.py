@@ -1,5 +1,3 @@
-import random
-
 def first_name(fname: str) -> str:
     """
     Accepts a first name as input and return it
@@ -19,7 +17,7 @@ def first_name(fname: str) -> str:
 
 def last_name(lname: str) -> str:
     """
-    Accepts a first name as input and return it
+    Accepts a first name as input and returns it
 
     Parameters
     ----------
