@@ -29,6 +29,5 @@ def confirm_valid_names(input_list: List[str]) -> None:
                              "Please check with the marketing team")
     
 
-if __name__ == "__main__":
-    names = ["Wolfai", "Zainab", "A4tullah"]
-    confirm_valid_names(input_list=names)
+names = ["Wolfai", "Zainab", "A4tullah"]
+confirm_valid_names(input_list=names)
