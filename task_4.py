@@ -1,28 +1,8 @@
 from typing import List
 
-def from_marketing() -> List[str]:
-    """
-    This function returns a list of names from the marketing team
-
-    Parameters
-    ----------
-    None
-
-    Returns
-    -------
-    List[str]
-        A list containing names
-    """
-
-    return ["Wofai", "Zainab", "A4atullah"]
-
-
-# help(str)
-
 def confirm_valid_names(input_list: List[str]) -> None:
     """
     Check that the input list contains only valid names
-
     Valid names are names that contain only alphabetic characters
 
     Parmeters
@@ -38,7 +18,7 @@ def confirm_valid_names(input_list: List[str]) -> None:
     Raises
     ------
     ValueError
-        If a name conatains non-alphabetic characters
+        If any name conatains non-alphabetic characters
 
     """
     for name in input_list:
@@ -50,5 +30,5 @@ def confirm_valid_names(input_list: List[str]) -> None:
     
 
 if __name__ == "__main__":
-    names = from_marketing()
+    names = ["Wolfai", "Zainab", "A4tullah"]
     confirm_valid_names(input_list=names)
